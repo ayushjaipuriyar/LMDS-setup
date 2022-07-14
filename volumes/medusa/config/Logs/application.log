@@ -1,0 +1,452 @@
+2022-07-04 14:22:49 INFO     MAIN :: [] Changed https cert path to server.crt
+2022-07-04 14:22:49 INFO     MAIN :: [] Changed https key path to server.key
+2022-07-04 14:22:50 INFO     MAIN :: [] Broken providers found: ['danishbits', 'btdb', 'hdtorrents']
+2022-07-04 14:22:50 INFO     MAIN :: [] Backing up database before upgrade
+2022-07-04 14:22:50 INFO     MAIN :: [] Proceeding with upgrade
+2022-07-04 14:22:50 INFO     MAIN :: [] Add minor version numbers to database
+2022-07-04 14:22:50 INFO     MAIN :: [] [MAIN-DB] Updated major version to: 43.0
+2022-07-04 14:22:50 INFO     MAIN :: [] [MAIN-DB] Updated minor version to: 43.1
+2022-07-04 14:22:50 INFO     MAIN :: [] Backing up database before upgrade
+2022-07-04 14:22:50 INFO     MAIN :: [] Proceeding with upgrade
+2022-07-04 14:22:50 INFO     MAIN :: [] Test major and minor version updates database
+2022-07-04 14:22:50 INFO     MAIN :: [] [MAIN-DB] Updated major version to: 44.0
+2022-07-04 14:22:50 INFO     MAIN :: [] [MAIN-DB] Updated minor version to: 44.1
+2022-07-04 14:22:50 INFO     MAIN :: [] Backing up database before upgrade
+2022-07-04 14:22:50 INFO     MAIN :: [] Proceeding with upgrade
+2022-07-04 14:22:50 INFO     MAIN :: [] Adding column proper_tags to history
+2022-07-04 14:22:50 INFO     MAIN :: [] [MAIN-DB] Updated minor version to: 44.2
+2022-07-04 14:22:50 INFO     MAIN :: [] Backing up database before upgrade
+2022-07-04 14:22:50 INFO     MAIN :: [] Proceeding with upgrade
+2022-07-04 14:22:50 INFO     MAIN :: [] Adding column manually_searched to history
+2022-07-04 14:22:50 INFO     MAIN :: [] Adding column manually_searched to tv_episodes
+2022-07-04 14:22:50 INFO     MAIN :: [] [MAIN-DB] Updated minor version to: 44.3
+2022-07-04 14:22:50 INFO     MAIN :: [] Backing up database before upgrade
+2022-07-04 14:22:50 INFO     MAIN :: [] Proceeding with upgrade
+2022-07-04 14:22:50 INFO     MAIN :: [] Adding column info_hash in history
+2022-07-04 14:22:50 INFO     MAIN :: [] [MAIN-DB] Updated minor version to: 44.4
+2022-07-04 14:22:50 INFO     MAIN :: [] Backing up database before upgrade
+2022-07-04 14:22:50 INFO     MAIN :: [] Proceeding with upgrade
+2022-07-04 14:22:50 INFO     MAIN :: [] Adding column plot in imdb_info
+2022-07-04 14:22:50 INFO     MAIN :: [] Adding column plot in tv_show
+2022-07-04 14:22:50 INFO     MAIN :: [] [MAIN-DB] Updated minor version to: 44.5
+2022-07-04 14:22:50 INFO     MAIN :: [] Backing up database before upgrade
+2022-07-04 14:22:50 INFO     MAIN :: [] Proceeding with upgrade
+2022-07-04 14:22:50 INFO     MAIN :: [] Adding column size in history
+2022-07-04 14:22:50 INFO     MAIN :: [] [MAIN-DB] Updated minor version to: 44.6
+2022-07-04 14:22:50 INFO     MAIN :: [] Backing up database before upgrade
+2022-07-04 14:22:50 INFO     MAIN :: [] Proceeding with upgrade
+2022-07-04 14:22:50 INFO     MAIN :: [] Adding PK to mindexer column in indexer_mapping table
+2022-07-04 14:22:50 INFO     MAIN :: [] [MAIN-DB] Updated minor version to: 44.7
+2022-07-04 14:22:50 INFO     MAIN :: [] Backing up database before upgrade
+2022-07-04 14:22:50 INFO     MAIN :: [] Proceeding with upgrade
+2022-07-04 14:22:50 INFO     MAIN :: [] Make indexer and indexer_id as INTEGER in tv_episodes table
+2022-07-04 14:22:50 INFO     MAIN :: [] [MAIN-DB] Updated minor version to: 44.8
+2022-07-04 14:22:50 INFO     MAIN :: [] Backing up database before upgrade
+2022-07-04 14:22:50 INFO     MAIN :: [] Proceeding with upgrade
+2022-07-04 14:22:50 INFO     MAIN :: [] Adding column indexer_id in history
+2022-07-04 14:22:50 INFO     MAIN :: [] Adding column indexer_id in blacklist
+2022-07-04 14:22:50 INFO     MAIN :: [] Adding column indexer_id in whitelist
+2022-07-04 14:22:50 INFO     MAIN :: [] Adding column indexer in imdb_info
+2022-07-04 14:22:50 INFO     MAIN :: [] Dropping the unique index on idx_indexer_id
+2022-07-04 14:22:50 INFO     MAIN :: [] Dropping the primary key on the table xem_refresh
+2022-07-04 14:22:50 INFO     MAIN :: [] Updating indexer field on table blacklist. Using the series id to match with field show_id
+2022-07-04 14:22:50 INFO     MAIN :: [] Updating indexer field on table whitelist. Using the series id to match with field show_id
+2022-07-04 14:22:50 INFO     MAIN :: [] Updating indexer field on table history. Using the series id to match with field showid
+2022-07-04 14:22:50 INFO     MAIN :: [] Updating indexer field on table imdb_info. Using the series id to match with field indexer_id
+2022-07-04 14:22:50 INFO     MAIN :: [] [MAIN-DB] Updated minor version to: 44.9
+2022-07-04 14:22:50 INFO     MAIN :: [] Backing up database before upgrade
+2022-07-04 14:22:50 INFO     MAIN :: [] Proceeding with upgrade
+2022-07-04 14:22:50 INFO     MAIN :: [] Adding new quality field in the tv_episodes table
+2022-07-04 14:22:51 INFO     MAIN :: [] Dropping the index on idx_sta_epi_air
+2022-07-04 14:22:51 INFO     MAIN :: [] Dropping the index on idx_sta_epi_sta_air
+2022-07-04 14:22:51 INFO     MAIN :: [] Dropping the index on idx_status
+2022-07-04 14:22:51 INFO     MAIN :: [] Splitting the composite status into status and quality
+2022-07-04 14:22:51 INFO     MAIN :: [] Removing the quality from the action field, as this is a composite status
+2022-07-04 14:22:51 INFO     MAIN :: [] [MAIN-DB] Updated minor version to: 44.10
+2022-07-04 14:22:51 INFO     MAIN :: [] Backing up database before upgrade
+2022-07-04 14:22:51 INFO     MAIN :: [] Proceeding with upgrade
+2022-07-04 14:22:51 INFO     MAIN :: [] Shift qualities in tv_shows one place to the left.
+2022-07-04 14:22:51 INFO     MAIN :: [] Shift qualities in tv_episodes one place to the left.
+2022-07-04 14:22:51 INFO     MAIN :: [] Shift qualities in history one place to the left.
+2022-07-04 14:22:51 INFO     MAIN :: [] [MAIN-DB] Updated minor version to: 44.11
+2022-07-04 14:22:51 INFO     MAIN :: [] Backing up database before upgrade
+2022-07-04 14:22:51 INFO     MAIN :: [] Proceeding with upgrade
+2022-07-04 14:22:51 INFO     MAIN :: [] Adding new watched field in the tv_episodes table
+2022-07-04 14:22:51 INFO     MAIN :: [] [MAIN-DB] Updated minor version to: 44.12
+2022-07-04 14:22:51 INFO     MAIN :: [] Backing up database before upgrade
+2022-07-04 14:22:51 INFO     MAIN :: [] Proceeding with upgrade
+2022-07-04 14:22:51 INFO     MAIN :: [] Adding new airdate_offset field in the tv_shows table
+2022-07-04 14:22:51 INFO     MAIN :: [] [MAIN-DB] Updated minor version to: 44.13
+2022-07-04 14:22:51 INFO     MAIN :: [] Backing up database before upgrade
+2022-07-04 14:22:51 INFO     MAIN :: [] Proceeding with upgrade
+2022-07-04 14:22:51 INFO     MAIN :: [] Adding release ignore and require exclude option flags to the tv_shows table
+2022-07-04 14:22:51 INFO     MAIN :: [] [MAIN-DB] Updated minor version to: 44.14
+2022-07-04 14:22:51 INFO     MAIN :: [] Backing up database before upgrade
+2022-07-04 14:22:51 INFO     MAIN :: [] Proceeding with upgrade
+2022-07-04 14:22:51 INFO     MAIN :: [] Creating a new table scene_exceptions in the main.db database.
+2022-07-04 14:22:51 INFO     MAIN :: [] [MAIN-DB] Updated minor version to: 44.15
+2022-07-04 14:22:51 INFO     MAIN :: [] Backing up database before upgrade
+2022-07-04 14:22:51 INFO     MAIN :: [] Proceeding with upgrade
+2022-07-04 14:22:51 INFO     MAIN :: [] Addin show_lists field to tv_shows.
+2022-07-04 14:22:51 INFO     MAIN :: [] [MAIN-DB] Updated minor version to: 44.16
+2022-07-04 14:22:51 INFO     MAIN :: [] Backing up database before upgrade
+2022-07-04 14:22:51 INFO     MAIN :: [] Proceeding with upgrade
+2022-07-04 14:22:51 INFO     MAIN :: [] Creating a new table custom_logs in the main.db database.
+2022-07-04 14:22:51 INFO     MAIN :: [] [MAIN-DB] Updated minor version to: 44.17
+2022-07-04 14:22:51 INFO     MAIN :: [] Backing up database before upgrade
+2022-07-04 14:22:51 INFO     MAIN :: [] Proceeding with upgrade
+2022-07-04 14:22:51 INFO     MAIN :: [] Adding column provider_type to the history table
+2022-07-04 14:22:51 INFO     MAIN :: [] Adding column client_status to the history table
+2022-07-04 14:22:51 INFO     MAIN :: [] Adding column part_of_batch to the history table
+2022-07-04 14:22:51 INFO     MAIN :: [] [MAIN-DB] Updated minor version to: 44.18
+2022-07-04 14:22:51 INFO     MAIN :: [] Backing up database before upgrade
+2022-07-04 14:22:51 INFO     MAIN :: [] Proceeding with upgrade
+2022-07-04 14:22:51 INFO     MAIN :: [] Creating a new table search_templates in the main.db database.
+2022-07-04 14:22:51 INFO     MAIN :: [] Adding new templates field in the tv_shows table
+2022-07-04 14:22:51 INFO     MAIN :: [] [MAIN-DB] Updated minor version to: 44.19
+2022-07-04 14:22:51 INFO     MAIN :: [] Backing up database before upgrade
+2022-07-04 14:22:51 INFO     MAIN :: [] Proceeding with upgrade
+2022-07-04 14:22:51 INFO     MAIN :: [] [CACHE-DB] Updated major version to: 2.None
+2022-07-04 14:22:51 INFO     MAIN :: [] Backing up database before upgrade
+2022-07-04 14:22:51 INFO     MAIN :: [] Proceeding with upgrade
+2022-07-04 14:22:51 INFO     MAIN :: [] [CACHE-DB] Updated major version to: 3.None
+2022-07-04 14:22:51 INFO     MAIN :: [] [CACHE-DB] Updated major version to: 4.None
+2022-07-04 14:22:51 INFO     MAIN :: [] Backing up database before upgrade
+2022-07-04 14:22:51 INFO     MAIN :: [] Proceeding with upgrade
+2022-07-04 14:22:51 INFO     MAIN :: [] Shift qualities in history one place to the left.
+2022-07-04 14:22:51 INFO     MAIN :: [] Update status UNKONWN from tv_episodes
+2022-07-04 14:22:51 INFO     MAIN :: [] [FAILED-DB] Updated major version to: 3.None
+2022-07-04 14:22:51 INFO     MAIN :: [] Missing idx_tv_episodes_showid_airdate for TV Episodes table detected, fixing...
+2022-07-04 14:22:51 INFO     MAIN :: [] Missing idx_showid for TV Episodes table detected, fixing...
+2022-07-04 14:22:51 INFO     MAIN :: [] Missing idx_status for TV Episodes table detected, fixing...
+2022-07-04 14:22:51 INFO     MAIN :: [] Missing idx_sta_epi_air for TV Episodes table detected, fixing...
+2022-07-04 14:22:51 INFO     MAIN :: [] Missing idx_sta_epi_sta_air for TV Episodes table detected, fixing...
+2022-07-04 14:22:51 INFO     MAIN :: [] Starting Medusa [] using '/config/config.ini'
+2022-07-04 14:22:51 INFO     MAIN :: [] Generating New API key
+2022-07-04 14:22:51 INFO     TORNADO :: [] Starting Medusa on http://0.0.0.0:8081/
+2022-07-04 14:22:51 INFO     MAIN :: [] Checking for scene exception updates from https://cdn.pymedusa.com/scene_exceptions/scene_exceptions_tvdb.json
+2022-07-04 14:22:54 INFO     MAIN :: [] Checking for scene exception updates from https://cdn.pymedusa.com/scene_exceptions/scene_exceptions_tvmaze.json
+2022-07-04 14:22:55 INFO     MAIN :: [] Checking for scene exception updates from https://cdn.pymedusa.com/scene_exceptions/scene_exceptions_tmdb.json
+2022-07-04 14:22:56 INFO     MAIN :: [] Checking for scene exception updates from https://cdn.pymedusa.com/scene_exceptions/scene_exceptions_imdb.json
+2022-07-04 14:22:57 INFO     MAIN :: [] Checking for XEM scene exceptions updates for TVDBv2
+2022-07-04 14:22:59 INFO     MAIN :: [] Checking for scene exceptions updates from AniDB
+2022-07-04 14:22:59 INFO     MAIN :: [] Updated scene exceptions.
+2022-07-04 14:22:59 INFO     MAIN :: [] Updating exception_cache and exception_season_cache
+2022-07-04 14:23:00 INFO     MAIN :: [] Finished processing 3840 scene exceptions.
+2022-07-04 14:23:00 INFO     MAIN :: [] Building internal name cache for all shows
+2022-07-04 14:28:12 INFO     MAIN :: [] Signal 15 caught, saving and exiting...
+2022-07-04 14:28:12 INFO     EVENT-QUEUE :: [] Aborting all threads
+2022-07-04 14:28:12 INFO     EVENT-QUEUE :: [] Waiting for the DAILYSEARCHER thread to exit
+2022-07-04 14:28:13 INFO     EVENT-QUEUE :: [] Waiting for the BACKLOG thread to exit
+2022-07-04 14:28:13 INFO     EVENT-QUEUE :: [] Waiting for the SHOWUPDATER thread to exit
+2022-07-04 14:28:13 INFO     EVENT-QUEUE :: [] Waiting for the EPISODEUPDATER thread to exit
+2022-07-04 14:28:13 INFO     EVENT-QUEUE :: [] Waiting for the CHECKVERSION thread to exit
+2022-07-04 14:28:13 INFO     EVENT-QUEUE :: [] Waiting for the SHOWQUEUE thread to exit
+2022-07-04 14:28:13 INFO     EVENT-QUEUE :: [] Waiting for the SEARCHQUEUE thread to exit
+2022-07-04 14:28:13 INFO     EVENT-QUEUE :: [] Waiting for the FORCEDSEARCHQUEUE thread to exit
+2022-07-04 14:28:13 INFO     EVENT-QUEUE :: [] Waiting for the MANUALSNATCHQUEUE thread to exit
+2022-07-04 14:28:13 INFO     EVENT-QUEUE :: [] Waiting for the TRAKTCHECKER thread to exit
+2022-07-04 14:28:13 INFO     EVENT-QUEUE :: [] Waiting for the FINDPROPERS thread to exit
+2022-07-04 14:28:13 INFO     EVENT-QUEUE :: [] Waiting for the FINDSUBTITLES thread to exit
+2022-07-04 14:28:13 INFO     EVENT-QUEUE :: [] Waiting for the DOWNLOADHANDLER thread to exit
+2022-07-04 14:28:13 INFO     EVENT-QUEUE :: [] Waiting for the POSTPROCESSOR thread to exit
+2022-07-04 14:28:13 INFO     EVENT-QUEUE :: [] Waiting for the POSTPROCESSORQUEUE thread to exit
+2022-07-04 14:28:13 INFO     EVENT-QUEUE :: [] Waiting for the EVENT-QUEUE thread to exit
+2022-07-04 14:28:13 INFO     EVENT-QUEUE :: [] Saving all shows to the database
+2022-07-04 14:28:13 INFO     EVENT-QUEUE :: [] Saving config file to disk
+2022-07-04 14:28:13 INFO     EVENT-QUEUE :: [] Shutting down Tornado
+2022-07-04 14:28:31 INFO     MAIN :: [] Changed https cert path to server.crt
+2022-07-04 14:28:31 INFO     MAIN :: [] Changed https key path to server.key
+2022-07-04 14:28:32 INFO     MAIN :: [] Broken providers found: ['danishbits', 'btdb', 'hdtorrents']
+2022-07-04 14:28:32 INFO     MAIN :: [] Starting Medusa [] using '/config/config.ini'
+2022-07-04 14:28:32 INFO     TORNADO :: [] Starting Medusa on http://0.0.0.0:8081/
+2022-07-04 14:28:32 INFO     MAIN :: [] Updating exception_cache and exception_season_cache
+2022-07-04 14:28:32 INFO     MAIN :: [] Finished processing 3840 scene exceptions.
+2022-07-04 14:28:32 INFO     MAIN :: [] Building internal name cache for all shows
+2022-07-04 14:40:50 INFO     MAIN :: [] Signal 15 caught, saving and exiting...
+2022-07-04 14:40:50 INFO     EVENT-QUEUE :: [] Aborting all threads
+2022-07-04 14:40:50 INFO     EVENT-QUEUE :: [] Waiting for the DAILYSEARCHER thread to exit
+2022-07-04 14:40:50 INFO     EVENT-QUEUE :: [] Waiting for the BACKLOG thread to exit
+2022-07-04 14:40:50 INFO     EVENT-QUEUE :: [] Waiting for the SHOWUPDATER thread to exit
+2022-07-04 14:40:50 INFO     EVENT-QUEUE :: [] Waiting for the EPISODEUPDATER thread to exit
+2022-07-04 14:40:50 INFO     EVENT-QUEUE :: [] Waiting for the CHECKVERSION thread to exit
+2022-07-04 14:40:50 INFO     EVENT-QUEUE :: [] Waiting for the SHOWQUEUE thread to exit
+2022-07-04 14:40:50 INFO     EVENT-QUEUE :: [] Waiting for the SEARCHQUEUE thread to exit
+2022-07-04 14:40:50 INFO     EVENT-QUEUE :: [] Waiting for the FORCEDSEARCHQUEUE thread to exit
+2022-07-04 14:40:50 INFO     EVENT-QUEUE :: [] Waiting for the MANUALSNATCHQUEUE thread to exit
+2022-07-04 14:40:50 INFO     EVENT-QUEUE :: [] Waiting for the TRAKTCHECKER thread to exit
+2022-07-04 14:40:50 INFO     EVENT-QUEUE :: [] Waiting for the FINDPROPERS thread to exit
+2022-07-04 14:40:50 INFO     EVENT-QUEUE :: [] Waiting for the FINDSUBTITLES thread to exit
+2022-07-04 14:40:50 INFO     EVENT-QUEUE :: [] Waiting for the DOWNLOADHANDLER thread to exit
+2022-07-04 14:40:50 INFO     EVENT-QUEUE :: [] Waiting for the POSTPROCESSOR thread to exit
+2022-07-04 14:40:50 INFO     EVENT-QUEUE :: [] Waiting for the POSTPROCESSORQUEUE thread to exit
+2022-07-04 14:40:50 INFO     EVENT-QUEUE :: [] Waiting for the EVENT-QUEUE thread to exit
+2022-07-04 14:40:50 INFO     EVENT-QUEUE :: [] Saving all shows to the database
+2022-07-04 14:40:50 INFO     EVENT-QUEUE :: [] Saving config file to disk
+2022-07-04 14:40:50 INFO     EVENT-QUEUE :: [] Shutting down Tornado
+2022-07-04 14:41:03 INFO     MAIN :: [] Changed https cert path to server.crt
+2022-07-04 14:41:03 INFO     MAIN :: [] Changed https key path to server.key
+2022-07-04 14:41:03 INFO     MAIN :: [] Broken providers found: ['danishbits', 'btdb', 'hdtorrents']
+2022-07-04 14:41:04 INFO     MAIN :: [] Starting Medusa [] using '/config/config.ini'
+2022-07-04 14:41:04 INFO     TORNADO :: [] Starting Medusa on http://0.0.0.0:8081/
+2022-07-04 14:41:04 INFO     MAIN :: [] Updating exception_cache and exception_season_cache
+2022-07-04 14:41:04 INFO     MAIN :: [] Finished processing 3840 scene exceptions.
+2022-07-04 14:41:04 INFO     MAIN :: [] Building internal name cache for all shows
+2022-07-04 14:51:42 INFO     MAIN :: [] Signal 15 caught, saving and exiting...
+2022-07-04 14:51:42 INFO     EVENT-QUEUE :: [] Aborting all threads
+2022-07-04 14:51:42 INFO     EVENT-QUEUE :: [] Waiting for the DAILYSEARCHER thread to exit
+2022-07-04 14:51:42 INFO     EVENT-QUEUE :: [] Waiting for the BACKLOG thread to exit
+2022-07-04 14:51:42 INFO     EVENT-QUEUE :: [] Waiting for the SHOWUPDATER thread to exit
+2022-07-04 14:51:42 INFO     EVENT-QUEUE :: [] Waiting for the EPISODEUPDATER thread to exit
+2022-07-04 14:51:42 INFO     EVENT-QUEUE :: [] Waiting for the CHECKVERSION thread to exit
+2022-07-04 14:51:42 INFO     EVENT-QUEUE :: [] Waiting for the SHOWQUEUE thread to exit
+2022-07-04 14:51:42 INFO     EVENT-QUEUE :: [] Waiting for the SEARCHQUEUE thread to exit
+2022-07-04 14:51:42 INFO     EVENT-QUEUE :: [] Waiting for the FORCEDSEARCHQUEUE thread to exit
+2022-07-04 14:51:42 INFO     EVENT-QUEUE :: [] Waiting for the MANUALSNATCHQUEUE thread to exit
+2022-07-04 14:51:42 INFO     EVENT-QUEUE :: [] Waiting for the TRAKTCHECKER thread to exit
+2022-07-04 14:51:42 INFO     EVENT-QUEUE :: [] Waiting for the FINDPROPERS thread to exit
+2022-07-04 14:51:42 INFO     EVENT-QUEUE :: [] Waiting for the FINDSUBTITLES thread to exit
+2022-07-04 14:51:42 INFO     EVENT-QUEUE :: [] Waiting for the DOWNLOADHANDLER thread to exit
+2022-07-04 14:51:42 INFO     EVENT-QUEUE :: [] Waiting for the POSTPROCESSOR thread to exit
+2022-07-04 14:51:42 INFO     EVENT-QUEUE :: [] Waiting for the POSTPROCESSORQUEUE thread to exit
+2022-07-04 14:51:42 INFO     EVENT-QUEUE :: [] Waiting for the EVENT-QUEUE thread to exit
+2022-07-04 14:51:42 INFO     EVENT-QUEUE :: [] Saving all shows to the database
+2022-07-04 14:51:42 INFO     EVENT-QUEUE :: [] Saving config file to disk
+2022-07-04 14:51:42 INFO     EVENT-QUEUE :: [] Shutting down Tornado
+2022-07-04 14:51:54 INFO     MAIN :: [] Changed https cert path to server.crt
+2022-07-04 14:51:54 INFO     MAIN :: [] Changed https key path to server.key
+2022-07-04 14:51:55 INFO     MAIN :: [] Broken providers found: ['danishbits', 'btdb', 'hdtorrents']
+2022-07-04 14:51:55 INFO     MAIN :: [] Starting Medusa [] using '/config/config.ini'
+2022-07-04 14:51:55 INFO     TORNADO :: [] Starting Medusa on http://0.0.0.0:8081/
+2022-07-04 14:51:55 INFO     MAIN :: [] Updating exception_cache and exception_season_cache
+2022-07-04 14:51:55 INFO     MAIN :: [] Finished processing 3840 scene exceptions.
+2022-07-04 14:51:55 INFO     MAIN :: [] Building internal name cache for all shows
+2022-07-04 14:55:43 INFO     SHOWQUEUE-ADD :: [] Starting to add show by Indexer Id: 279121
+2022-07-04 14:55:55 INFO     SHOWQUEUE-ADD :: [] Updating exception_cache and exception_season_cache
+2022-07-04 14:55:55 INFO     SHOWQUEUE-ADD :: [] Finished processing 0 scene exceptions.
+2022-07-04 14:56:09 ERROR    SHOWQUEUE-ADD :: [] Unable to create the folder /home/The Flash (2014), can't add the show
+2022-07-04 14:56:10 INFO     MAIN :: [] Signal 15 caught, saving and exiting...
+2022-07-04 14:56:10 INFO     EVENT-QUEUE :: [] Aborting all threads
+2022-07-04 14:56:10 INFO     EVENT-QUEUE :: [] Waiting for the DAILYSEARCHER thread to exit
+2022-07-04 14:56:11 INFO     EVENT-QUEUE :: [] Waiting for the BACKLOG thread to exit
+2022-07-04 14:56:11 INFO     EVENT-QUEUE :: [] Waiting for the SHOWUPDATER thread to exit
+2022-07-04 14:56:11 INFO     EVENT-QUEUE :: [] Waiting for the EPISODEUPDATER thread to exit
+2022-07-04 14:56:11 INFO     EVENT-QUEUE :: [] Waiting for the CHECKVERSION thread to exit
+2022-07-04 14:56:11 INFO     EVENT-QUEUE :: [] Waiting for the SHOWQUEUE thread to exit
+2022-07-04 14:56:11 INFO     EVENT-QUEUE :: [] Waiting for the SEARCHQUEUE thread to exit
+2022-07-04 14:56:11 INFO     EVENT-QUEUE :: [] Waiting for the FORCEDSEARCHQUEUE thread to exit
+2022-07-04 14:56:11 INFO     EVENT-QUEUE :: [] Waiting for the MANUALSNATCHQUEUE thread to exit
+2022-07-04 14:56:11 INFO     EVENT-QUEUE :: [] Waiting for the TRAKTCHECKER thread to exit
+2022-07-04 14:56:11 INFO     EVENT-QUEUE :: [] Waiting for the FINDPROPERS thread to exit
+2022-07-04 14:56:11 INFO     EVENT-QUEUE :: [] Waiting for the FINDSUBTITLES thread to exit
+2022-07-04 14:56:11 INFO     EVENT-QUEUE :: [] Waiting for the DOWNLOADHANDLER thread to exit
+2022-07-04 14:56:11 INFO     EVENT-QUEUE :: [] Waiting for the POSTPROCESSOR thread to exit
+2022-07-04 14:56:11 INFO     EVENT-QUEUE :: [] Waiting for the POSTPROCESSORQUEUE thread to exit
+2022-07-04 14:56:11 INFO     EVENT-QUEUE :: [] Waiting for the EVENT-QUEUE thread to exit
+2022-07-04 14:56:11 INFO     EVENT-QUEUE :: [] Saving all shows to the database
+2022-07-04 14:56:11 INFO     EVENT-QUEUE :: [] Saving config file to disk
+2022-07-04 14:56:11 INFO     EVENT-QUEUE :: [] Shutting down Tornado
+2022-07-04 14:56:14 WARNING  SHOWQUEUE-ADD :: [] 279121: Show directory doesn't exist, skipping NFO generation
+2022-07-04 14:56:14 WARNING  SHOWQUEUE-ADD :: [] 279121: Show directory doesn't exist, skipping NFO update
+2022-07-04 14:56:14 WARNING  SHOWQUEUE-ADD :: [] Path does not exist. Unable to search it for images.
+2022-07-04 14:56:14 WARNING  SHOWQUEUE-ADD :: [] Path does not exist. Unable to search it for images.
+2022-07-04 14:56:14 WARNING  SHOWQUEUE-ADD :: [] Path does not exist. Unable to search it for images.
+2022-07-04 14:56:15 INFO     SHOWQUEUE-ADD :: [] Selected fanart for series 279121 (score=18.165372737709426, score_bay=35.33074547541885, rating=43, votes=43, res=1920x1080): https://www.thetvdb.com/banners/fanart/original/279121-9.jpg
+2022-07-04 14:56:15 INFO     SHOWQUEUE-ADD :: [] Selected poster for series 279121 (score=26.859284248332163, score_bay=52.718568496664325, rating=66, votes=66, res=680x1000): https://www.thetvdb.com/banners/posters/279121-5.jpg
+2022-07-04 14:56:15 INFO     SHOWQUEUE-ADD :: [] Cache check completed
+2022-07-04 14:56:15 INFO     SHOWQUEUE-ADD :: [] Updating exception_cache and exception_season_cache
+2022-07-04 14:56:16 INFO     SHOWQUEUE-ADD :: [] Finished processing 3840 scene exceptions.
+2022-07-04 14:56:16 INFO     SHOWQUEUE-ADD :: [] Building internal name cache for The Flash (2014)
+2022-07-04 14:56:16 INFO     SHOWQUEUE-ADD :: [] Updating exception_cache and exception_season_cache
+2022-07-04 14:56:16 INFO     SHOWQUEUE-ADD :: [] Finished processing 0 scene exceptions.
+2022-07-04 17:23:30 INFO     MAIN :: [] Changed https cert path to server.crt
+2022-07-04 17:23:30 INFO     MAIN :: [] Changed https key path to server.key
+2022-07-04 17:23:30 INFO     MAIN :: [] Broken providers found: ['danishbits', 'btdb', 'hdtorrents']
+2022-07-04 17:23:31 INFO     MAIN :: [] Updating exception_cache and exception_season_cache
+2022-07-04 17:23:31 INFO     MAIN :: [] Finished processing 0 scene exceptions.
+2022-07-04 17:23:31 INFO     MAIN :: [] Starting Medusa [] using '/config/config.ini'
+2022-07-04 17:23:31 INFO     TORNADO :: [] Starting Medusa on http://0.0.0.0:8081/
+2022-07-04 17:23:31 INFO     MAIN :: [] Updating exception_cache and exception_season_cache
+2022-07-04 17:23:31 INFO     MAIN :: [] Finished processing 3840 scene exceptions.
+2022-07-04 17:23:31 INFO     MAIN :: [] Building internal name cache for all shows
+2022-07-04 17:26:31 INFO     MAIN :: [] Signal 15 caught, saving and exiting...
+2022-07-04 17:26:31 INFO     EVENT-QUEUE :: [] Aborting all threads
+2022-07-04 17:26:31 INFO     EVENT-QUEUE :: [] Waiting for the DAILYSEARCHER thread to exit
+2022-07-04 17:26:32 INFO     EVENT-QUEUE :: [] Waiting for the BACKLOG thread to exit
+2022-07-04 17:26:32 INFO     EVENT-QUEUE :: [] Waiting for the SHOWUPDATER thread to exit
+2022-07-04 17:26:32 INFO     EVENT-QUEUE :: [] Waiting for the EPISODEUPDATER thread to exit
+2022-07-04 17:26:32 INFO     EVENT-QUEUE :: [] Waiting for the CHECKVERSION thread to exit
+2022-07-04 17:26:32 INFO     EVENT-QUEUE :: [] Waiting for the SHOWQUEUE thread to exit
+2022-07-04 17:26:32 INFO     EVENT-QUEUE :: [] Waiting for the SEARCHQUEUE thread to exit
+2022-07-04 17:26:32 INFO     EVENT-QUEUE :: [] Waiting for the FORCEDSEARCHQUEUE thread to exit
+2022-07-04 17:26:32 INFO     EVENT-QUEUE :: [] Waiting for the MANUALSNATCHQUEUE thread to exit
+2022-07-04 17:26:32 INFO     EVENT-QUEUE :: [] Waiting for the TRAKTCHECKER thread to exit
+2022-07-04 17:26:32 INFO     EVENT-QUEUE :: [] Waiting for the FINDPROPERS thread to exit
+2022-07-04 17:26:32 INFO     EVENT-QUEUE :: [] Waiting for the FINDSUBTITLES thread to exit
+2022-07-04 17:26:32 INFO     EVENT-QUEUE :: [] Waiting for the DOWNLOADHANDLER thread to exit
+2022-07-04 17:26:32 INFO     EVENT-QUEUE :: [] Waiting for the POSTPROCESSOR thread to exit
+2022-07-04 17:26:32 INFO     EVENT-QUEUE :: [] Waiting for the POSTPROCESSORQUEUE thread to exit
+2022-07-04 17:26:32 INFO     EVENT-QUEUE :: [] Waiting for the EVENT-QUEUE thread to exit
+2022-07-04 17:26:32 INFO     EVENT-QUEUE :: [] Saving all shows to the database
+2022-07-04 17:26:32 INFO     EVENT-QUEUE :: [] Saving config file to disk
+2022-07-04 17:26:32 INFO     EVENT-QUEUE :: [] Shutting down Tornado
+2022-07-04 17:54:59 INFO     MAIN :: [] Changed https cert path to server.crt
+2022-07-04 17:54:59 INFO     MAIN :: [] Changed https key path to server.key
+2022-07-04 17:55:00 INFO     MAIN :: [] Broken providers found: ['danishbits', 'btdb', 'hdtorrents']
+2022-07-04 17:55:01 INFO     MAIN :: [] Updating exception_cache and exception_season_cache
+2022-07-04 17:55:01 INFO     MAIN :: [] Finished processing 0 scene exceptions.
+2022-07-04 17:55:01 INFO     MAIN :: [] Starting Medusa [] using '/config/config.ini'
+2022-07-04 17:55:01 INFO     TORNADO :: [] Starting Medusa on http://0.0.0.0:8081/
+2022-07-04 17:55:01 INFO     MAIN :: [] Updating exception_cache and exception_season_cache
+2022-07-04 17:55:01 INFO     MAIN :: [] Finished processing 3840 scene exceptions.
+2022-07-04 17:55:01 INFO     MAIN :: [] Building internal name cache for all shows
+2022-07-04 18:30:43 INFO     MAIN :: [] Signal 15 caught, saving and exiting...
+2022-07-04 18:30:43 INFO     EVENT-QUEUE :: [] Aborting all threads
+2022-07-04 18:30:43 INFO     EVENT-QUEUE :: [] Waiting for the DAILYSEARCHER thread to exit
+2022-07-04 18:30:44 INFO     EVENT-QUEUE :: [] Waiting for the BACKLOG thread to exit
+2022-07-04 18:30:44 INFO     EVENT-QUEUE :: [] Waiting for the SHOWUPDATER thread to exit
+2022-07-04 18:30:44 INFO     EVENT-QUEUE :: [] Waiting for the EPISODEUPDATER thread to exit
+2022-07-04 18:30:44 INFO     EVENT-QUEUE :: [] Waiting for the CHECKVERSION thread to exit
+2022-07-04 18:30:44 INFO     EVENT-QUEUE :: [] Waiting for the SHOWQUEUE thread to exit
+2022-07-04 18:30:44 INFO     EVENT-QUEUE :: [] Waiting for the SEARCHQUEUE thread to exit
+2022-07-04 18:30:44 INFO     EVENT-QUEUE :: [] Waiting for the FORCEDSEARCHQUEUE thread to exit
+2022-07-04 18:30:44 INFO     EVENT-QUEUE :: [] Waiting for the MANUALSNATCHQUEUE thread to exit
+2022-07-04 18:30:44 INFO     EVENT-QUEUE :: [] Waiting for the TRAKTCHECKER thread to exit
+2022-07-04 18:30:44 INFO     EVENT-QUEUE :: [] Waiting for the FINDPROPERS thread to exit
+2022-07-04 18:30:44 INFO     EVENT-QUEUE :: [] Waiting for the FINDSUBTITLES thread to exit
+2022-07-04 18:30:44 INFO     EVENT-QUEUE :: [] Waiting for the DOWNLOADHANDLER thread to exit
+2022-07-04 18:30:44 INFO     EVENT-QUEUE :: [] Waiting for the POSTPROCESSOR thread to exit
+2022-07-04 18:30:44 INFO     EVENT-QUEUE :: [] Waiting for the POSTPROCESSORQUEUE thread to exit
+2022-07-04 18:30:44 INFO     EVENT-QUEUE :: [] Waiting for the EVENT-QUEUE thread to exit
+2022-07-04 18:30:44 INFO     EVENT-QUEUE :: [] Saving all shows to the database
+2022-07-04 18:30:44 INFO     EVENT-QUEUE :: [] Saving config file to disk
+2022-07-04 18:30:44 INFO     EVENT-QUEUE :: [] Shutting down Tornado
+2022-07-05 02:47:42 INFO     MAIN :: [] Changed https cert path to server.crt
+2022-07-05 02:47:42 INFO     MAIN :: [] Changed https key path to server.key
+2022-07-05 02:47:42 INFO     MAIN :: [] Broken providers found: ['danishbits', 'btdb', 'hdtorrents']
+2022-07-05 02:47:43 INFO     MAIN :: [] Updating exception_cache and exception_season_cache
+2022-07-05 02:47:43 INFO     MAIN :: [] Finished processing 0 scene exceptions.
+2022-07-05 02:47:43 INFO     MAIN :: [] Starting Medusa [] using '/config/config.ini'
+2022-07-05 02:47:43 INFO     TORNADO :: [] Starting Medusa on http://0.0.0.0:8081/
+2022-07-05 02:47:43 INFO     MAIN :: [] Updating exception_cache and exception_season_cache
+2022-07-05 02:47:43 INFO     MAIN :: [] Finished processing 3840 scene exceptions.
+2022-07-05 02:47:43 INFO     MAIN :: [] Building internal name cache for all shows
+2022-07-05 03:02:43 INFO     EPISODEUPDATER :: [] Updating network timezones failed, this can happen from time to time. URL: https://cdn.pymedusa.com/sb_network_timezones/network_timezones.txt
+2022-07-05 03:30:16 INFO     SEARCHQUEUE-DAILY-SEARCH :: [] Beginning daily search for new episodes
+2022-07-05 03:30:16 INFO     SEARCHQUEUE-DAILY-SEARCH :: [] No needed episodes found
+2022-07-05 03:32:46 INFO     EPISODEUPDATER :: [] Updating network timezones failed, this can happen from time to time. URL: https://cdn.pymedusa.com/sb_network_timezones/network_timezones.txt
+2022-07-05 03:43:01 INFO     SHOWUPDATER :: [] Updating exception_cache and exception_season_cache
+2022-07-05 03:43:01 INFO     SHOWUPDATER :: [] Finished processing 3840 scene exceptions.
+2022-07-05 03:43:01 INFO     SHOWUPDATER :: [] Started periodic show updates
+2022-07-05 03:43:02 INFO     SHOWUPDATER :: [] Completed scheduling updates on shows, but there was nothing to update
+2022-07-05 03:47:44 INFO     CHECKVERSION :: [] Checking for updates using Docker Updater
+2022-07-05 03:52:54 INFO     MAIN :: [] Signal 15 caught, saving and exiting...
+2022-07-05 03:52:54 INFO     EVENT-QUEUE :: [] Aborting all threads
+2022-07-05 03:52:54 INFO     EVENT-QUEUE :: [] Waiting for the DAILYSEARCHER thread to exit
+2022-07-05 03:52:54 INFO     EVENT-QUEUE :: [] Waiting for the BACKLOG thread to exit
+2022-07-05 03:52:54 INFO     EVENT-QUEUE :: [] Waiting for the SHOWUPDATER thread to exit
+2022-07-05 03:52:55 INFO     EVENT-QUEUE :: [] Waiting for the EPISODEUPDATER thread to exit
+2022-07-05 03:52:55 INFO     EVENT-QUEUE :: [] Waiting for the CHECKVERSION thread to exit
+2022-07-05 03:52:55 INFO     EVENT-QUEUE :: [] Waiting for the SHOWQUEUE thread to exit
+2022-07-05 03:52:55 INFO     EVENT-QUEUE :: [] Waiting for the SEARCHQUEUE-DAILY-SEARCH thread to exit
+2022-07-05 03:52:55 INFO     EVENT-QUEUE :: [] Waiting for the FORCEDSEARCHQUEUE thread to exit
+2022-07-05 03:52:55 INFO     EVENT-QUEUE :: [] Waiting for the MANUALSNATCHQUEUE thread to exit
+2022-07-05 03:52:55 INFO     EVENT-QUEUE :: [] Waiting for the TRAKTCHECKER thread to exit
+2022-07-05 03:52:55 INFO     EVENT-QUEUE :: [] Waiting for the FINDPROPERS thread to exit
+2022-07-05 03:52:55 INFO     EVENT-QUEUE :: [] Waiting for the FINDSUBTITLES thread to exit
+2022-07-05 03:52:55 INFO     EVENT-QUEUE :: [] Waiting for the DOWNLOADHANDLER thread to exit
+2022-07-05 03:52:55 INFO     EVENT-QUEUE :: [] Waiting for the POSTPROCESSOR thread to exit
+2022-07-05 03:52:55 INFO     EVENT-QUEUE :: [] Waiting for the POSTPROCESSORQUEUE thread to exit
+2022-07-05 03:52:55 INFO     EVENT-QUEUE :: [] Waiting for the EVENT-QUEUE thread to exit
+2022-07-05 03:52:55 INFO     EVENT-QUEUE :: [] Saving all shows to the database
+2022-07-05 03:52:55 INFO     EVENT-QUEUE :: [] Saving config file to disk
+2022-07-05 03:52:55 INFO     EVENT-QUEUE :: [] Broken providers found: ['danishbits', 'btdb', 'hdtorrents']
+2022-07-05 03:52:55 INFO     EVENT-QUEUE :: [] Shutting down Tornado
+2022-07-07 02:44:33 INFO     MAIN :: [] Changed https cert path to server.crt
+2022-07-07 02:44:33 INFO     MAIN :: [] Changed https key path to server.key
+2022-07-07 02:44:34 INFO     MAIN :: [] Broken providers found: ['danishbits', 'btdb', 'hdtorrents']
+2022-07-07 02:44:34 INFO     MAIN :: [] Updating exception_cache and exception_season_cache
+2022-07-07 02:44:34 INFO     MAIN :: [] Finished processing 0 scene exceptions.
+2022-07-07 02:44:34 INFO     MAIN :: [] Starting Medusa [master] using '/config/config.ini'
+2022-07-07 02:44:34 INFO     TORNADO :: [] Starting Medusa on http://0.0.0.0:8081/
+2022-07-07 02:44:34 INFO     MAIN :: [] Checking for scene exception updates from https://cdn.pymedusa.com/scene_exceptions/scene_exceptions_tvdb.json
+2022-07-07 02:44:35 INFO     MAIN :: [] Checking for scene exception updates from https://cdn.pymedusa.com/scene_exceptions/scene_exceptions_tvmaze.json
+2022-07-07 02:44:35 INFO     MAIN :: [] Checking for scene exception updates from https://cdn.pymedusa.com/scene_exceptions/scene_exceptions_tmdb.json
+2022-07-07 02:44:35 INFO     MAIN :: [] Checking for scene exception updates from https://cdn.pymedusa.com/scene_exceptions/scene_exceptions_imdb.json
+2022-07-07 02:44:35 INFO     MAIN :: [] Checking for XEM scene exceptions updates for TVDBv2
+2022-07-07 02:44:36 INFO     MAIN :: [] Checking for scene exceptions updates from AniDB
+2022-07-07 02:44:37 INFO     MAIN :: [] Updated scene exceptions.
+2022-07-07 02:44:37 INFO     MAIN :: [] Updating exception_cache and exception_season_cache
+2022-07-07 02:44:37 INFO     MAIN :: [] Finished processing 3844 scene exceptions.
+2022-07-07 02:44:37 INFO     MAIN :: [] Building internal name cache for all shows
+2022-07-07 03:20:29 INFO     EPISODEUPDATER :: [] Updating network timezones failed, this can happen from time to time. URL: https://cdn.pymedusa.com/sb_network_timezones/network_timezones.txt
+2022-07-07 03:24:37 INFO     SEARCHQUEUE-DAILY-SEARCH :: [] Beginning daily search for new episodes
+2022-07-07 03:24:37 INFO     SEARCHQUEUE-DAILY-SEARCH :: [] No needed episodes found
+2022-07-07 03:53:14 INFO     EPISODEUPDATER :: [] Updating network timezones failed, this can happen from time to time. URL: https://cdn.pymedusa.com/sb_network_timezones/network_timezones.txt
+2022-07-07 03:53:14 INFO     SHOWUPDATER :: [] Updating network timezones failed, this can happen from time to time. URL: https://cdn.pymedusa.com/sb_network_timezones/network_timezones.txt
+2022-07-07 03:53:14 INFO     SHOWUPDATER :: [] Updating exception_cache and exception_season_cache
+2022-07-07 03:53:14 WARNING  CHECKVERSION :: [] Unable to contact github, can't check for update: ConnectionError(MaxRetryError("HTTPSConnectionPool(host='api.github.com', port=443): Max retries exceeded with url: /orgs/pymedusa (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f4ac1085790>: Failed to establish a new connection: [Errno -3] Try again'))"))
+2022-07-07 03:53:14 INFO     CHECKVERSION :: [] Checking for updates using Docker Updater
+2022-07-07 03:53:14 INFO     SHOWUPDATER :: [] Finished processing 3844 scene exceptions.
+2022-07-07 03:53:14 INFO     SHOWUPDATER :: [] Started periodic show updates
+2022-07-07 03:53:16 INFO     SHOWUPDATER :: [] Completed scheduling updates on shows, but there was nothing to update
+2022-07-07 03:53:20 INFO     MAIN :: [] Signal 15 caught, saving and exiting...
+2022-07-07 03:53:20 INFO     EVENT-QUEUE :: [] Aborting all threads
+2022-07-07 03:53:20 INFO     EVENT-QUEUE :: [] Waiting for the DAILYSEARCHER thread to exit
+2022-07-07 03:53:21 INFO     EVENT-QUEUE :: [] Waiting for the BACKLOG thread to exit
+2022-07-07 03:53:21 INFO     EVENT-QUEUE :: [] Waiting for the SHOWUPDATER thread to exit
+2022-07-07 03:53:21 INFO     EVENT-QUEUE :: [] Waiting for the EPISODEUPDATER thread to exit
+2022-07-07 03:53:21 INFO     EVENT-QUEUE :: [] Waiting for the CHECKVERSION thread to exit
+2022-07-07 03:53:21 INFO     EVENT-QUEUE :: [] Waiting for the SHOWQUEUE thread to exit
+2022-07-07 03:53:21 INFO     EVENT-QUEUE :: [] Waiting for the SEARCHQUEUE-DAILY-SEARCH thread to exit
+2022-07-07 03:53:21 INFO     EVENT-QUEUE :: [] Waiting for the FORCEDSEARCHQUEUE thread to exit
+2022-07-07 03:53:21 INFO     EVENT-QUEUE :: [] Waiting for the MANUALSNATCHQUEUE thread to exit
+2022-07-07 03:53:21 INFO     EVENT-QUEUE :: [] Waiting for the TRAKTCHECKER thread to exit
+2022-07-07 03:53:21 INFO     EVENT-QUEUE :: [] Waiting for the FINDPROPERS thread to exit
+2022-07-07 03:53:21 INFO     EVENT-QUEUE :: [] Waiting for the FINDSUBTITLES thread to exit
+2022-07-07 03:53:21 INFO     EVENT-QUEUE :: [] Waiting for the DOWNLOADHANDLER thread to exit
+2022-07-07 03:53:21 INFO     EVENT-QUEUE :: [] Waiting for the POSTPROCESSOR thread to exit
+2022-07-07 03:53:21 INFO     EVENT-QUEUE :: [] Waiting for the POSTPROCESSORQUEUE thread to exit
+2022-07-07 03:53:21 INFO     EVENT-QUEUE :: [] Waiting for the EVENT-QUEUE thread to exit
+2022-07-07 03:53:21 INFO     EVENT-QUEUE :: [] Saving all shows to the database
+2022-07-07 03:53:21 INFO     EVENT-QUEUE :: [] Saving config file to disk
+2022-07-07 03:53:22 INFO     EVENT-QUEUE :: [] Broken providers found: ['danishbits', 'btdb', 'hdtorrents']
+2022-07-07 03:53:22 INFO     EVENT-QUEUE :: [] Shutting down Tornado
+2022-07-14 19:08:39 INFO     MAIN :: [] Changed https cert path to server.crt
+2022-07-14 19:08:39 INFO     MAIN :: [] Changed https key path to server.key
+2022-07-14 19:08:40 INFO     MAIN :: [] Broken providers found: ['danishbits', 'btdb', 'hdtorrents']
+2022-07-14 19:08:40 INFO     MAIN :: [] Updating exception_cache and exception_season_cache
+2022-07-14 19:08:40 INFO     MAIN :: [] Finished processing 0 scene exceptions.
+2022-07-14 19:08:40 INFO     MAIN :: [] Starting Medusa [master] using '/config/config.ini'
+2022-07-14 19:08:40 INFO     TORNADO :: [] Starting Medusa on http://0.0.0.0:8081/
+2022-07-14 19:08:40 INFO     MAIN :: [] Checking for scene exception updates from https://cdn.pymedusa.com/scene_exceptions/scene_exceptions_tvdb.json
+2022-07-14 19:08:41 INFO     MAIN :: [] Checking for scene exception updates from https://cdn.pymedusa.com/scene_exceptions/scene_exceptions_tvmaze.json
+2022-07-14 19:08:41 INFO     MAIN :: [] Checking for scene exception updates from https://cdn.pymedusa.com/scene_exceptions/scene_exceptions_tmdb.json
+2022-07-14 19:08:41 INFO     MAIN :: [] Checking for scene exception updates from https://cdn.pymedusa.com/scene_exceptions/scene_exceptions_imdb.json
+2022-07-14 19:08:42 INFO     MAIN :: [] Checking for XEM scene exceptions updates for TVDBv2
+2022-07-14 19:08:42 INFO     MAIN :: [] Checking for scene exceptions updates from AniDB
+2022-07-14 19:08:43 INFO     MAIN :: [] Updated scene exceptions.
+2022-07-14 19:08:43 INFO     MAIN :: [] Updating exception_cache and exception_season_cache
+2022-07-14 19:08:43 INFO     MAIN :: [] Finished processing 3856 scene exceptions.
+2022-07-14 19:08:43 INFO     MAIN :: [] Building internal name cache for all shows
+2022-07-14 19:12:53 INFO     MAIN :: [] Signal 15 caught, saving and exiting...
+2022-07-14 19:12:53 INFO     EVENT-QUEUE :: [] Aborting all threads
+2022-07-14 19:12:53 INFO     EVENT-QUEUE :: [] Waiting for the DAILYSEARCHER thread to exit
+2022-07-14 19:12:54 INFO     EVENT-QUEUE :: [] Waiting for the BACKLOG thread to exit
+2022-07-14 19:12:54 INFO     EVENT-QUEUE :: [] Waiting for the SHOWUPDATER thread to exit
+2022-07-14 19:12:54 INFO     EVENT-QUEUE :: [] Waiting for the EPISODEUPDATER thread to exit
+2022-07-14 19:12:54 INFO     EVENT-QUEUE :: [] Waiting for the CHECKVERSION thread to exit
+2022-07-14 19:12:54 INFO     EVENT-QUEUE :: [] Waiting for the SHOWQUEUE thread to exit
+2022-07-14 19:12:54 INFO     EVENT-QUEUE :: [] Waiting for the SEARCHQUEUE thread to exit
+2022-07-14 19:12:54 INFO     EVENT-QUEUE :: [] Waiting for the FORCEDSEARCHQUEUE thread to exit
+2022-07-14 19:12:54 INFO     EVENT-QUEUE :: [] Waiting for the MANUALSNATCHQUEUE thread to exit
+2022-07-14 19:12:54 INFO     EVENT-QUEUE :: [] Waiting for the TRAKTCHECKER thread to exit
+2022-07-14 19:12:54 INFO     EVENT-QUEUE :: [] Waiting for the FINDPROPERS thread to exit
+2022-07-14 19:12:54 INFO     EVENT-QUEUE :: [] Waiting for the FINDSUBTITLES thread to exit
+2022-07-14 19:12:54 INFO     EVENT-QUEUE :: [] Waiting for the DOWNLOADHANDLER thread to exit
+2022-07-14 19:12:54 INFO     EVENT-QUEUE :: [] Waiting for the POSTPROCESSOR thread to exit
+2022-07-14 19:12:54 INFO     EVENT-QUEUE :: [] Waiting for the POSTPROCESSORQUEUE thread to exit
+2022-07-14 19:12:54 INFO     EVENT-QUEUE :: [] Waiting for the EVENT-QUEUE thread to exit
+2022-07-14 19:12:54 INFO     EVENT-QUEUE :: [] Saving all shows to the database
+2022-07-14 19:12:54 INFO     EVENT-QUEUE :: [] Saving config file to disk
+2022-07-14 19:12:54 INFO     EVENT-QUEUE :: [] Shutting down Tornado

@@ -1,0 +1,8 @@
+portainer
+sonarr
+medusa
+radarr
+lidarr
+bazarr
+jackett
+deluge
